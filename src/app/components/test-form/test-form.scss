@@ -1,0 +1,36 @@
+.form-container{
+  display: flex;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  color:rgb(114, 8, 73)
+}
+label{
+  margin-right: 10px;
+}
+
+input{
+  margin-right: 10px;
+  border: none;
+  border-radius: 6px;
+}
+
+.input-container{
+  display: flex;
+  margin-bottom: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-btn{
+  width: 100px;
+  border-radius: 6px;
+}
+
+.error{
+  color: red;
+  font-size: 18px;
+}

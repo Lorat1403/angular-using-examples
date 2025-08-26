@@ -1,9 +1,9 @@
 import { Component, Input, EventEmitter, Output, inject } from '@angular/core';
 import{  CommonModule } from '@angular/common';
 import { FormsModule, NgModel } from '@angular/forms';
-import { TodoService } from '../../../services/todo-service';
-import { TruncatePipe } from '../../../pipes/truncate-pipe';
-import { HighlightDirective } from '../../../directives/highlight';
+import { TodoService } from '../../services/todo-service';
+import { TruncatePipe } from '../../pipes/truncate-pipe';
+import { HighlightDirective } from '../../directives/highlight';
 
 @Component({
   selector: 'app-test',

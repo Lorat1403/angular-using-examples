@@ -1,0 +1,41 @@
+<div class="form-container">
+  <form [formGroup]="complexForm" (ngSubmit)="onSubmit()">
+    <div class="input-container">
+      <label for="name">Name:</label>
+      <input id="name" type="text" formControlName="name" />
+      <div *ngIf="name?.invalid && name?.touched" class="error">
+        This value is invalid
+      </div>
+    </div>
+
+    <div class="input-container">
+      <label for="email">Email:</label>
+      <input id="email" type="email" formControlName="email" />
+      <div *ngIf="email?.invalid && email?.touched" class="error">
+        This value is invalid
+      </div>
+    </div>
+
+    <div class="input-container">
+      <label for="age">Age:</label>
+      <input id="age" type="number" formControlName="age" />
+      <div *ngIf="age?.invalid && age?.touched" class="error">
+        This value is invalid
+      </div>
+    </div>
+
+    <div class="input-container">
+      <label for="password">Password:</label>
+      <input id="password" type="password" formControlName="password" />
+      <div *ngIf="password?.invalid && password?.touched" class="error">
+        This value is invalid
+      </div>
+    </div>
+
+    <div class="input-container">
+      <label for="consent">I agree to the terms and conditions</label>
+      <input id="consent" type="checkbox" formControlName="consent" />
+      <button class="form-btn" [disabled]="complexForm.invalid">Submit</button>
+    </div>
+  </form>
+</div>
