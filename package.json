@@ -1,6 +1,7 @@
 {
   "name": "angular-using-examples",
   "version": "0.0.0",
+   "homepage": "https://Lorat1403.github.io/angular-using-examples",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
