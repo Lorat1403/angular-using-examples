@@ -1,0 +1,19 @@
+.subject-container{
+  display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+         
+}
+
+p {
+  margin: 10px;
+  border-radius: 6px;
+  text-align: center;
+  color: rgb(217, 57, 108);
+  font-size: 20px;
+  font-weight: 500;
+  background-color: rgb(27, 181, 212);
+}
