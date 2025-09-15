@@ -4,10 +4,11 @@ import { Test } from './components/test/test';
 import {
   TestForm
 } from './components/test-form/test-form';
+import { RxjsTest } from './components/rxjs-test/rxjs-test';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Test, TestForm],
+  imports: [RouterOutlet, Test, TestForm, RxjsTest],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
