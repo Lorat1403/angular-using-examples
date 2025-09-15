@@ -6,10 +6,11 @@ import {
 } from './components/test-form/test-form';
 import { RxjsTest } from './components/rxjs-test/rxjs-test';
 import { RxjsSubject } from './components/rxjs-subject/rxjs-subject';
+import { RxjsOperators } from './components/rxjs-operators/rxjs-operators';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Test, TestForm, RxjsTest, RxjsSubject],
+  imports: [RouterOutlet, Test, TestForm, RxjsTest, RxjsSubject, RxjsOperators],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
