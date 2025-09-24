@@ -17,14 +17,14 @@
         "build": {
           "builder": "@angular/build:application",
           "options": {
+              "outputPath": "dist/",
+             "index": "src/index.html",
             "browser": "src/main.ts",
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
-            "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
+             "assets": [
+              "public/favicon.ico",
+              "src/assets"
             ],
             "styles": [
               "src/styles.scss"
@@ -84,6 +84,9 @@
               "src/styles.scss"
             ]
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
