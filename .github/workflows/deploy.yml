@@ -1,0 +1,36 @@
+name: Deploy Angular to GitHub Pages
+
+on:
+  # Запускати цей робочий процес при кожному push у гілку 'main'
+  push:
+    branches:
+      - main
+  # Дозволити запуск вручну
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code 🛎️
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js ⚙️
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20" # Використовуйте рекомендовану LTS версію Node.js
+
+      - name: Install Dependencies and Build 🏗️
+        run: |
+          npm install
+          # Важливо! --base-href має відповідати шляху до вашого сайту: /назва-репозиторію/
+          # Назва репозиторію Lorat1403/angular-using-examples
+          npm run build -- --base-href=/angular-using-examples/
+
+      - name: Deploy to GitHub Pages 🚀
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          # Папка, де Angular створює скомпільовані файли
+          publish_dir: ./dist/browser # Замініть на свій фактичний шлях, якщо він інший
