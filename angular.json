@@ -29,8 +29,8 @@
             ],
             "styles": [
               "src/styles.scss"
-            ]
-           
+            ],
+            "baseHref": "/angular-using-examples/"
           },
           "configurations": {
             "production": {
