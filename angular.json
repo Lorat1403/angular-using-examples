@@ -10,6 +10,7 @@
           "style": "scss"
         }
       },
+      
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -29,6 +30,7 @@
             "styles": [
               "src/styles.scss"
             ]
+           
           },
           "configurations": {
             "production": {
