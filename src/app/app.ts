@@ -1,5 +1,6 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { MatAccordion, MatExpansionPanel, MatExpansionPanelHeader, MatExpansionPanelTitle } from '@angular/material/expansion';
 import { Test } from './components/test/test';
 import { TestForm } from './components/test-form/test-form';
 import { RxjsTest } from './components/rxjs-test/rxjs-test';
@@ -10,7 +11,7 @@ import { Todos } from './components/todos/todos';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Test, TestForm, RxjsTest, RxjsSubject, RxjsOperators, Todos],
+  imports: [RouterOutlet, Test, TestForm, RxjsTest, RxjsSubject, RxjsOperators, Todos, MatAccordion, MatExpansionPanel, MatExpansionPanelHeader, MatExpansionPanelTitle],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })

@@ -7,15 +7,22 @@
 
   <div><app-todos></app-todos></div>
 
-  <div>
-    <app-rxjs-test></app-rxjs-test>
-  </div>
-  <div>
-    <app-rxjs-subject></app-rxjs-subject>
-  </div>
-  <div>
-    <app-rxjs-operators></app-rxjs-operators>
-  </div>
+  <mat-accordion>
+    <mat-expansion-panel class="mat_panel">
+      <mat-expansion-panel-header>
+        <mat-panel-title class="panel_title"> RJX Examples </mat-panel-title>
+      </mat-expansion-panel-header>
+      <div>
+        <app-rxjs-test></app-rxjs-test>
+      </div>
+      <div>
+        <app-rxjs-subject></app-rxjs-subject>
+      </div>
+      <div>
+        <app-rxjs-operators></app-rxjs-operators>
+      </div>
+    </mat-expansion-panel>
+  </mat-accordion>
 
   <app-test
     [childMessage]="messageFromParent"
