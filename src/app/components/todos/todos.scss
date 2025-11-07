@@ -1,0 +1,37 @@
+.todo-container {
+  display: flex;
+ justify-content: center;
+  align-items: center;
+}
+
+.todo-list {
+  list-style-type: none;
+  padding: 0;
+
+}
+
+.todo-item {
+  margin: 10px 0;
+
+}
+
+.add-btn {
+  display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+  background-color: rgb(38, 217, 38);
+  color: white;
+  font-size: 16px;
+    cursor: pointer;
+}
+.add-btn:hover{
+  background-color: darkviolet;
+    color: black;
+}
+
+.remove-btn {
+  background-color: rgb(125, 12, 12);
+  color: white;
+}

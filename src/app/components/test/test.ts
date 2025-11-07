@@ -13,35 +13,7 @@ import { HighlightDirective } from '../../directives/highlight';
 })
 export class Test {
 
-  newTask: string = '';
-  tasks: string[] = [];
-
-
-  // constructor(private todoService: TodoService) { }  1 варіант акттивації сервісу 
-
-  constructor() { } // 2 варіант активації сервісу
-
-  private todoService =inject(TodoService);
-  
-  ngOnInit() {
-    this.tasks = this.todoService.getTasks();
-  }
-  addTask() {
-    if (this.newTask.trim() !== '') {
-      this.todoService.addTask(this.newTask.trim());
-      this.newTask = '';
-      this.updateTasks();
-    }
-  }
-
-  removeTask(index: number) {
-    this.todoService.removeTask(index);
-    this.updateTasks();
-  }
-
-  private updateTasks() { 
-    this.tasks = this.todoService.getTasks();
-  }
+ 
   
    title = 'This is interpolation';
   firstName = 'Mary';

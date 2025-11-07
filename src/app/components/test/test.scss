@@ -67,13 +67,6 @@ button:disabled {
   color: white;
 }
 
-.todo-container {
-  display: flex;
-  // flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 .add-btn {
   background-color: rgb(38, 217, 38);
   color: white;
@@ -84,14 +77,3 @@ button:disabled {
   color: white;
 }
 
-.todo-list {
-  list-style-type: none;
-
-  padding: 0;
-
-}
-
-.todo-item {
-  margin: 10px 0;
-
-}

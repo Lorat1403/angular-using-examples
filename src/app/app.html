@@ -3,9 +3,10 @@
     <p>Це app -компонент</p>
     <p>{{ messageFromChild }}</p>
   </div>
-  <div>
-    <app-test-form></app-test-form>
-  </div>
+  <div><app-test-form></app-test-form></div>
+
+  <div><app-todos></app-todos></div>
+
   <div>
     <app-rxjs-test></app-rxjs-test>
   </div>
@@ -15,6 +16,7 @@
   <div>
     <app-rxjs-operators></app-rxjs-operators>
   </div>
+
   <app-test
     [childMessage]="messageFromParent"
     (messageFromChild)="getMessageFromChild($event)"
