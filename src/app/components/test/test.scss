@@ -15,7 +15,7 @@ p {
   color: rgb(17, 97, 201);
   font-size: 20px;
   font-weight: 500;
-  background-color: lightskyblue;
+  background-color: rgb(98, 175, 226);
 }
 
 button {
@@ -75,5 +75,16 @@ button:disabled {
 .remove-btn {
   background-color: rgb(125, 12, 12);
   color: white;
+}
+
+.panel_title {
+  font-size: 20px;
+  text-align: center;
+}
+
+.mat_panel {
+  margin: 10px;
+  background-color: lightskyblue;
+
 }
 

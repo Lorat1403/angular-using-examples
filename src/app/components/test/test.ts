@@ -4,18 +4,17 @@ import { FormsModule, NgModel } from '@angular/forms';
 import { TodoService } from '../../services/todo-service';
 import { TruncatePipe } from '../../pipes/truncate-pipe';
 import { HighlightDirective } from '../../directives/highlight';
+import { MatExpansionPanelTitle, MatAccordion, MatExpansionPanel, MatExpansionPanelHeader } from "@angular/material/expansion";
 
 @Component({
   selector: 'app-test',
-  imports: [CommonModule, FormsModule, HighlightDirective, TruncatePipe],
+  imports: [CommonModule, FormsModule, HighlightDirective, TruncatePipe, MatExpansionPanelTitle, MatAccordion, MatExpansionPanel, MatExpansionPanelHeader],
   templateUrl: './test.html',
   styleUrl: './test.scss'
 })
 export class Test {
 
- 
-  
-   title = 'This is interpolation';
+  title = 'This is interpolation';
   firstName = 'Mary';
   lastName = 'Smith';
 

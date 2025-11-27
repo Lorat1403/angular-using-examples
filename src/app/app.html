@@ -3,9 +3,25 @@
     <p>Це app -компонент</p>
     <p>{{ messageFromChild }}</p>
   </div>
-  <div><app-test-form></app-test-form></div>
+  <mat-accordion>
+    <mat-expansion-panel class="mat_panel">
+      <mat-expansion-panel-header>
+        <mat-panel-title class="panel_title">
+          Test Form Example
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <div><app-test-form></app-test-form></div>
+    </mat-expansion-panel>
+  </mat-accordion>
 
-  <div><app-todos></app-todos></div>
+  <mat-accordion>
+    <mat-expansion-panel class="mat_panel">
+      <mat-expansion-panel-header>
+        <mat-panel-title class="panel_title"> Todos Example </mat-panel-title>
+      </mat-expansion-panel-header>
+      <div><app-todos></app-todos></div>
+    </mat-expansion-panel>
+  </mat-accordion>
 
   <mat-accordion>
     <mat-expansion-panel class="mat_panel">

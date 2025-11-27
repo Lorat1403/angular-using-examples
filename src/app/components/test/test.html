@@ -1,4 +1,36 @@
 <p>This is a test component</p>
+
+<div class="test-container">
+  <p>{{ childMessage }}</p>
+  <button (click)="sendMessageToParent()">Send Message to Parent</button>
+</div>
+
+<mat-accordion>
+  <mat-expansion-panel class="mat_panel">
+    <mat-expansion-panel-header>
+      <mat-panel-title class="panel_title">
+        Work with text/number/truncate Examples
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <div>
+      <p>{{ today | date : "shortDate" }}</p>
+      <p>{{ "hello, world!" | uppercase }}</p>
+      <p>{{ "HELLO, WORLD" | lowercase }}</p>
+      <p>{{ 1500.5 | currency }}</p>
+      <p>{{ 1.23456 | number }}</p>
+      <p>{{ 0.5 | percent }}</p>
+      <p>{{ "Hello, world" | slice : 1 : 5 }}</p>
+      <p>{{ { name: "John", age: 30 } | json }}</p>
+      <p>{{ "Long text, wich needs to be concate" | truncate : 10 }}</p>
+      <p>
+        Зразок вкладеного кастомного та вбудованого пайпів: "{{
+          longText | truncate : 10 | uppercase
+        }}"
+      </p>
+    </div>
+  </mat-expansion-panel>
+</mat-accordion>
+
 <p>{{ title }}</p>
 <p>{{ getFullName() }}</p>
 
@@ -7,29 +39,22 @@
   Тут використано ngClass
 </p>
 
-<div class="test-container">
-  <button [disabled]="!isEnabled">Click me</button>
+<mat-accordion>
+  <mat-expansion-panel class="mat_panel">
+    <mat-expansion-panel-header>
+      <mat-panel-title class="panel_title">
+        Work with button Examples
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <div class="test-container">
+      <button [disabled]="!isEnabled">Click me</button>
 
-  <div class="event-example" [ngClass]="{ clicked: isClickedState }"></div>
-  <button (click)="toggleState()">Tap me</button>
-  <input type="text" [(ngModel)]="inputText" />
-  <p>{{ inputText }}</p>
-  <p>{{ childMessage }}</p>
-  <button (click)="sendMessageToParent()">Send Message to Parent</button>
-  <p appHighlight [highlightColor]="'violet'">Наведи мишку сюди!</p>
+      <div class="event-example" [ngClass]="{ clicked: isClickedState }"></div>
+      <button (click)="toggleState()">Tap me</button>
+      <input type="text" [(ngModel)]="inputText" />
+      <p>{{ inputText }}</p>
 
-  <p>{{ today | date : "shortDate" }}</p>
-  <p>{{ "hello, world!" | uppercase }}</p>
-  <p>{{ "HELLO, WORLD" | lowercase }}</p>
-  <p>{{ 1500.5 | currency }}</p>
-  <p>{{ 1.23456 | number }}</p>
-  <p>{{ 0.5 | percent }}</p>
-  <p>{{ "Hello, world" | slice : 1 : 5 }}</p>
-  <p>{{ { name: "John", age: 30 } | json }}</p>
-  <p>{{ "Long text, wich needs to be concate" | truncate : 10 }}</p>
-  <p>
-    Зразок вкладеного кастомного та вбудованого пайпів: "{{
-      longText | truncate : 10 | uppercase
-    }}"
-  </p>
-</div>
+      <p appHighlight [highlightColor]="'violet'">Наведи мишку сюди!</p>
+    </div>
+  </mat-expansion-panel>
+</mat-accordion>
