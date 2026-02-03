@@ -34,9 +34,10 @@ body {
   margin: 0;
 }
 /* You can add global styles to this file, and also import other style files */
-body {
-  background-color: aquamarine;
-}
+body { 
+height: 100%;
+padding-bottom: 30px;
+background-color: aquamarine;
+font-family: 'Times New Roman', Times, serif, "Helvetica Neue", sans-serif;
+ }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: 'Times New Roman', Times, serif, "Helvetica Neue", sans-serif; }
